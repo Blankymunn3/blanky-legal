@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blanky 개인정보 처리방침</title>
+<meta name="description" content="Blanky(블랭키) 데스크탑 펫 앱의 개인정보 처리방침 — macOS·Windows 공통">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1b1b1f; --muted: #5b5b66; --line: #e3e3e8;
+    --accent: #d94f4f; --code-bg: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #e8e8ec; --muted: #a0a0ab; --line: #2c2c33;
+             --accent: #ff7a7a; --code-bg: #202027; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg); color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+                 "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.75; font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.8rem; line-height: 1.3; margin: 0 0 1.5rem; }
+  h2 { font-size: 1.25rem; margin: 2.75rem 0 .85rem; padding-top: 1.25rem;
+        border-top: 1px solid var(--line); }
+  h1 + p, h2 + p { margin-top: .5rem; }
+  p, li { overflow-wrap: break-word; }
+  strong { font-weight: 650; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  code { background: var(--code-bg); padding: .15em .4em; border-radius: 4px;
+          font-size: .9em; word-break: break-all; }
+  .tbl { overflow-x: auto; margin: 1rem 0; -webkit-overflow-scrolling: touch; }
+  table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: .93rem; }
+  th, td { border: 1px solid var(--line); padding: .55rem .7rem; text-align: left;
+            vertical-align: top; }
+  th { background: var(--code-bg); font-weight: 650; white-space: nowrap; }
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+            color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+<h1 id="blanky">Blanky 개인정보 처리방침</h1>
+<p><strong>시행일</strong>: 2026년 8월 31일
+<strong>최종 수정</strong>: 2026년 8월 31일</p>
+<h2 id="1">1. 적용 범위</h2>
+<p>본 방침은 아래 Blanky 앱에 공통 적용되며, 플랫폼에 따라 다른 항목은 <strong>[macOS]</strong> · <strong>[Windows]</strong> 로 표시합니다.</p>
+<ul>
+<li><strong>[macOS]</strong> Mac App Store 판, GitHub에서 내려받는 DMG 판</li>
+<li><strong>[Windows]</strong> Microsoft Store 판, 인스톨러(exe) 판</li>
+</ul>
+<p>앱은 회원가입·로그인 없이 동작하며, 이름·이메일·전화번호 등 신원 정보를 수집하지 않습니다.
+다만 아래 §3에 적은 경우에 한해 제한된 정보가 외부로 전송됩니다.</p>
+<h2 id="2">2. 처리하는 데이터</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>목적</th>
+<th>저장 위치</th>
+<th>외부 전송</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPU·메모리·디스크·배터리·네트워크 사용량</td>
+<td>시스템 모니터링 표시</td>
+<td>실시간 값은 메모리에서만 처리. <strong>[macOS]</strong> 위젯 표시를 위해 최근 평균값을 기기 내 앱 그룹 공유 저장소에 기록</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>로컬 IP 주소·네트워크 인터페이스 이름, 배터리 사이클 수·온도</td>
+<td>화면 표시</td>
+<td>메모리에서만 처리</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>기기가 고부하·저부하 상태에 진입한 시각</td>
+<td>펫 반응 판정</td>
+<td><strong>[Windows]</strong> 기기 내 <code>pet_state.json</code></td>
+<td>없음</td>
+</tr>
+<tr>
+<td>펫 상태(배고픔·기분·에너지·성장 단계), 인벤토리</td>
+<td>펫 육성 시스템</td>
+<td>기기 내 로컬 파일</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>캐릭터 설정, 앱 설정, 언어</td>
+<td>앱 설정 유지</td>
+<td>기기 내 로컬 파일·설정 저장소</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>이용자가 가져온 캐릭터 이미지(GIF·PNG)와 그 파일 이름</td>
+<td>커스텀 캐릭터 표시</td>
+<td>기기 내 로컬 폴더</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>구매·체험 상태(등급, 체험 시작일, 설치일)</td>
+<td>유료 기능 활성화</td>
+<td>기기 내 로컬 파일(<code>premium.json</code>)</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>결제 처리</td>
+<td>인앱 구매</td>
+<td><strong>[macOS]</strong> Apple App Store · <strong>[Windows]</strong> Microsoft Store가 각각 관리</td>
+<td>§3 (다)</td>
+</tr>
+<tr>
+<td>프로모션 코드 문자열</td>
+<td>코드 유효성 확인·중복 사용 방지</td>
+<td>개발자가 관리하는 Google Firestore</td>
+<td>§3 (가)</td>
+</tr>
+<tr>
+<td>기기별 임의 식별자</td>
+<td>프로모션 코드 중복 사용 방지</td>
+<td><strong>[macOS]</strong> 기기 내 설정 저장소 및 Google Firestore</td>
+<td>§3 (가)</td>
+</tr>
+<tr>
+<td>오류 진단 정보</td>
+<td>오류 원인 파악</td>
+<td><strong>[Windows]</strong> 동의한 경우에 한해 Sentry</td>
+<td>§3 (나)</td>
+</tr>
+<tr>
+<td>오류 로그 파일</td>
+<td>문제 확인</td>
+<td>기기 내 로컬 파일</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>크래시 리포트 전송 동의 여부</td>
+<td>이용자 선택 유지</td>
+<td><strong>[Windows]</strong> 기기 내 설정 파일</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>바탕화면 파일 이름 목록</td>
+<td><strong>[macOS]</strong> 자동 먹이찾기(§6)</td>
+<td>메모리에서만 처리하며 파일 내용은 읽지 않음</td>
+<td>없음</td>
+</tr>
+<tr>
+<td>로그인 시 자동 실행 설정</td>
+<td>이용자 선택</td>
+<td><strong>[macOS]</strong> 로그인 항목 · <strong>[Windows]</strong> 레지스트리</td>
+<td>없음</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3">3. 외부 전송</h2>
+<p>앱은 다음의 경우에 한해 외부와 통신합니다.</p>
+<p><strong>(가) 프로모션 코드 사용 시 — Google Firestore (미국)</strong>
+이용자가 프로모션 코드를 입력하고 확인을 누르면, 코드가 개발자가 관리하는 Google Firestore로 전송되어
+유효성을 확인합니다. 코드가 유효하면 사용 사실과 사용 시각이 기록됩니다.
+<strong>[macOS]</strong> 이때 중복 사용을 막기 위해 기기별 임의 식별자가 함께 기록됩니다. 이 식별자는 무작위로 생성된
+값이며 이름·이메일 등 신원 정보와 연결되지 않습니다.
+<strong>[Windows]</strong> 매번 새로 생성되는 일회용 값이 기록되므로 기기를 식별하지 않습니다.
+이 통신은 이용자가 코드를 입력할 때만 발생하며, 주기적·자동 전송은 없습니다.</p>
+<p><strong>(나) 오류 진단 정보 — Sentry (미국) · [Windows] 전용 · 기본값 꺼짐</strong>
+이용자가 <strong>동의한 경우에 한해</strong>, 앱이 예기치 않게 종료될 때 오류 내용과 발생 위치(스택 추적),
+실행 환경(운영체제·설치된 구성요소 목록), 앱 버전이 전송됩니다.
+동의는 첫 실행 시 묻고 <strong>기본값은 꺼짐</strong>이며, 트레이 메뉴에서 언제든 끌 수 있습니다.
+이름·이메일·결제 정보는 전송하지 않으며, 사용자 계정 이름과 컴퓨터 이름은 전송 전에 제거합니다.
+앱 이용 기록·행동 통계는 수집하지 않습니다. <strong>[macOS]</strong> 판에는 이 기능이 없습니다.</p>
+<p><strong>(다) 인앱 구매 — Apple App Store / Microsoft Store</strong>
+구매·구매 복원 시 각 스토어와 통신합니다. <strong>[macOS]</strong> 앱을 실행할 때 이미 구매한 항목이 있는지
+자동으로 조회합니다. 결제 수단 정보는 각 스토어가 관리하며 개발자는 접근할 수 없습니다.</p>
+<p><strong>(라) 이용자가 링크를 누른 경우</strong>
+후원 링크(ko-fi.com)를 누르면 기본 브라우저로 외부 사이트가 열립니다. 앱이 이용자 정보를
+덧붙이지는 않으나, 접속 과정에서 이용자의 IP 주소 등이 해당 사이트에 전달됩니다.</p>
+<p><strong>(마) 이용자가 공유를 실행한 경우</strong>
+<strong>[macOS]</strong> 펫 이미지를 공유하면 이용자가 고른 대상(메일·메시지·AirDrop 등)으로 이미지 파일과
+텍스트가 전달됩니다. 전달 대상은 이용자가 직접 선택합니다.</p>
+<p>위 (가)~(마) 외에 앱이 자동으로 전송하는 정보는 없습니다. 광고 SDK와 이용 행태 분석 도구는 사용하지 않습니다.</p>
+<h2 id="4">4. 국외 이전</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>이전받는 자</th>
+<th>국가</th>
+<th>이전 시점·방법</th>
+<th>이전 항목</th>
+<th>이용 목적</th>
+<th>보유 기간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google LLC (Firestore)</td>
+<td>미국</td>
+<td>프로모션 코드 입력 시 HTTPS 전송</td>
+<td>코드 문자열, 사용 시각, <strong>[macOS]</strong> 기기별 임의 식별자</td>
+<td>코드 유효성 확인·중복 사용 방지</td>
+<td>코드 관리 목적 달성 시까지</td>
+</tr>
+<tr>
+<td>Functional Software, Inc. (Sentry)</td>
+<td>미국</td>
+<td><strong>[Windows]</strong> 동의 시 오류 발생 시점에 HTTPS 전송</td>
+<td>오류 내용·발생 위치, 실행 환경, 앱 버전, 발신 IP</td>
+<td>오류 원인 파악·수정</td>
+<td>Sentry 보관 정책에 따름(최대 90일)</td>
+</tr>
+<tr>
+<td>Apple Inc. / Microsoft Corporation</td>
+<td>미국</td>
+<td>인앱 구매·구매 복원 시</td>
+<td>상품 식별자, 구매 권한 정보</td>
+<td>결제 및 구매 확인</td>
+<td>각 사 정책에 따름</td>
+</tr>
+</tbody>
+</table></div>
+<p>이용자는 국외 이전을 거부할 수 있습니다. 다만 (가)는 프로모션 코드를 사용하지 않으면 발생하지 않고,
+(나)는 동의하지 않거나 트레이 메뉴에서 끄면 발생하지 않으며, (다)는 인앱 구매를 이용하지 않으면 발생하지 않습니다.</p>
+<h2 id="5-3">5. 처리 위탁·제3자 제공</h2>
+<p>개발자는 이용자의 개인정보를 판매하거나 마케팅 목적으로 제3자에게 제공하지 않습니다.
+위 §4의 사업자는 서비스 제공에 필요한 범위에서만 정보를 처리하는 수탁자입니다.</p>
+<h2 id="6-macos">6. [macOS] 자동 먹이찾기 기능</h2>
+<p>이 기능을 켜면 펫이 먹이를 찾기 위해 <strong>바탕화면의 파일 이름 목록을 주기적으로 확인</strong>하고,
+대상 파일을 <strong>휴지통으로 이동</strong>합니다. 또한 이용자가 펫 위로 끌어다 놓은 파일도 휴지통으로 이동합니다.</p>
+<ul>
+<li>파일의 <strong>내용은 읽지 않으며</strong>, 파일 이름이나 목록을 외부로 전송하지 않습니다.</li>
+<li>파일은 영구 삭제되지 않고 휴지통으로 이동하므로 복원할 수 있습니다.</li>
+<li>이 기능은 설정에서 끌 수 있으며, 끄면 바탕화면에 접근하지 않습니다.</li>
+</ul>
+<h2 id="7">7. 보유 기간 및 파기</h2>
+<p><strong>기기 내 데이터</strong>는 이용자가 앱을 사용하는 동안 보관되며, 아래 경로에 저장됩니다.</p>
+<ul>
+<li><strong>[macOS]</strong> Mac App Store 판: 앱 샌드박스 컨테이너 내부</li>
+<li><strong>[macOS]</strong> DMG 판: <code>~/Library/Application Support/Blanky/</code>, <code>~/Library/Group Containers/</code></li>
+<li><strong>[Windows]</strong> <code>%APPDATA%\Blanky\</code>, 임시 폴더의 오류 로그, 레지스트리 <code>HKCU\Software\Blanky</code></li>
+</ul>
+<p>⚠️ <strong>앱을 삭제해도 위 경로의 데이터와 설정은 자동으로 지워지지 않습니다.</strong>
+완전히 지우려면 위 폴더와 레지스트리 항목을 직접 삭제해 주세요.</p>
+<p><strong>외부에 기록된 데이터</strong>는 프로모션 코드 사용 기록(코드·사용 시각·<strong>[macOS]</strong> 기기별 임의 식별자)뿐이며,
+코드 관리 목적을 달성하면 파기합니다. 삭제를 원하시면 §10의 연락처로 요청해 주세요.</p>
+<h2 id="8">8. 이용자의 권리</h2>
+<p>이용자는 개인정보의 열람·정정·삭제·처리정지를 요구할 수 있습니다.
+기기 내 데이터는 §7의 경로에서 직접 삭제할 수 있으며, 프로모션 코드 사용 기록의 삭제는
+§10의 연락처로 요청하시면 처리합니다. 요청 시 본인 확인을 위해 사용한 코드를 알려주셔야 할 수 있습니다.</p>
+<p>크래시 리포트 전송 동의는 <strong>[Windows]</strong> 트레이 메뉴에서 언제든 철회할 수 있습니다.</p>
+<h2 id="9">9. 아동의 개인정보</h2>
+<p>앱은 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.
+(미국 등 COPPA가 적용되는 지역에서는 13세 미만)</p>
+<h2 id="10">10. 개인정보 보호책임자 및 문의</h2>
+<ul>
+<li>개인정보 보호책임자: Blanky 개발자</li>
+<li>이메일: curato2026@gmail.com</li>
+</ul>
+<p>개인정보 관련 문의·열람·삭제 요청을 위 이메일로 보내주시면 처리합니다.</p>
+<h2 id="11">11. 권익침해 구제 방법</h2>
+<p>개인정보 침해로 인한 상담·신고가 필요하시면 아래 기관에 문의하실 수 있습니다.</p>
+<ul>
+<li>개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)</li>
+<li>개인정보침해신고센터: 118 (privacy.kisa.or.kr)</li>
+<li>대검찰청 사이버수사과: 1301 (www.spo.go.kr)</li>
+<li>경찰청 사이버수사국: 182 (ecrm.police.go.kr)</li>
+</ul>
+<h2 id="12">12. 변경 사항</h2>
+<p>본 방침이 변경되면 변경된 내용과 시행일을 이 문서에 반영하고, 앱 배포 채널을 통해 공지합니다.</p>
+<ul>
+<li>2026년 8월 31일: 실제 동작에 맞추어 전면 개정. 프로모션 코드 조회 시 외부 전송,
+  <strong>[Windows]</strong> 오류 진단 정보 전송, 자동 먹이찾기의 파일 접근, 기기 내 저장 경로와 잔존 데이터,
+  국외 이전·권익침해 구제 등을 명시했습니다.</li>
+<li>2026년 4월 1일: 최초 시행</li>
+</ul>
+<footer>
+  Blanky · 문의 <a href="mailto:curato2026@gmail.com">curato2026@gmail.com</a><br>
+  <a href="https://apps.microsoft.com/detail/9N6BDVM1N71Q">Microsoft Store</a> ·
+  <a href="https://apps.apple.com/app/id6761479092">Mac App Store</a>
+</footer>
+</main>
+</body>
+</html>
